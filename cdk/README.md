@@ -5,7 +5,7 @@ which fully relies on [AWS CDK for Java](https://docs.aws.amazon.com/cdk/latest/
 
 ## Installation
 
-1. Install [AWS CDK CLI](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
+1. Install [AWS CDK CLI](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html) (Go for CDK v2)
 2. [`cdk boostrap --profile YOUR_AWS_PROFILE`](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html)
 
 ## Useful commands
