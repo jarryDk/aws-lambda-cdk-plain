@@ -54,6 +54,14 @@ mvn clean package
 cd cdk && mvn clean package && cdk deploy
 ```
 
+...provisioned with maven and cdk if using a profile:
+
+```
+mvn clean package
+cd cdk && mvn clean package && cdk deploy --profile YOUR_AWS_PROFILE
+```
+
+
 ...and (blackbox) tested with [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide):
 
 ```java
