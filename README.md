@@ -36,7 +36,7 @@ import software.amazon.awscdk.services.lambda.Runtime;
 
 Function createUserListenerFunction(String functionName,String functionHandler, int memory, int timeout) {
     return Function.Builder.create(this, id(functionName))
-            .runtime(Runtime.JAVA_11)
+            .runtime(Runtime.JAVA_11) //https://aws.amazon.com/corretto
             .code(Code.fromAsset("../target/function.jar"))
             .handler(functionHandler)
             .memorySize(memory)
@@ -101,6 +101,20 @@ public void invokeLambdaAsynchronously() {
 ## In Action
 
 [![Plain Java POJOs as AWS Lambdas](https://i.ytimg.com/vi/rHq514-1aHM/mqdefault.jpg)](https://www.youtube.com/embed/rHq514-1aHM?rel=0)
+
+## Java "vs." JavaScript
+
+Cold and "warm" starts of JavaScript and Java Lambdas:
+
+[![Java vs. JavaScript comparison](https://i.ytimg.com/vi/28Da0l0MFms/mqdefault.jpg)](https://www.youtube.com/embed/28Da0l0MFms?rel=0)
+
+## AWS Lambda on Java: How Good / Bad Is The Cold Start?
+
+[![Coldstart with Java](https://i.ytimg.com/vi/EXSZ5TFgUKU/mqdefault.jpg)](https://www.youtube.com/embed/EXSZ5TFgUKU?rel=0)
+
+## Lambda Configuration
+
+[![AWS Lambda Configuration with Java CDK](https://i.ytimg.com/vi/Z3Ir-AQEsKk/mqdefault.jpg)](https://www.youtube.com/embed/Z3Ir-AQEsKk?rel=0)
 
 ## References
 
